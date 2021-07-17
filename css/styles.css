@@ -1,0 +1,384 @@
+:root {
+    --orange: #ed4f2e;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* site title */
+.site-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.p-top {
+    padding-top: 100px;
+}
+
+.site-title .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.site-title .subtitle {
+    max-width: 545px;
+    font-size: 14px;
+    color: #1f2c33;
+    line-height: 20px;
+    margin: 22px 0 28px;
+}
+
+.site-title .line {
+    width: 135px;
+    height: 1px;
+    background: #d7d7d7;
+}
+
+.header .navbar {
+    padding: 36px 0;
+}
+
+.header .navbar .navbar-toggler {
+    border-color: var(--orange);
+    color: var(--orange)
+}
+
+.header .navbar .nav-link {
+    font-size: 14px;
+    column-rule: #1f2c33;
+    padding: 11px 17px;
+    border-radius: 5px;
+}
+
+.header .navbar .nav-link.active:hover,
+.header .navbar .nav-link.active {
+    color: #fff;
+    font-weight: 700;
+    background: var(--orange);
+}
+
+.navbar .nav-link:hover {
+    color: var(--orange);
+}
+
+/* main */
+.main {
+    background: url(../images/header_bg.jpg) no-repeat center / cover;
+    padding: 280px 0 260px;
+    color: #fff;
+}
+
+.main .main-title {
+    font-size: 50px;
+    line-height: 64px;
+}
+
+.main .main-subtitle {
+    max-width: 570px;
+    margin: 28px auto 38px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.main .main-link {
+    padding: 20px 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* SERVICES */
+.services .item {
+    margin-top: 118px;
+}
+
+.services .item i {
+    font-size: 55px;
+    color: #000000;
+}
+
+.services .item .title {
+    font-size: 25px;
+    color: #1f2c33;
+    margin: 18px 0 13px;
+}
+
+.services .item .text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #4f4f4f;
+}
+
+.services .item:hover .title {
+    color: var(--orange);
+}
+
+/* PRICING */
+.pricing .cards {
+    border: 1px solid #ebebeb;
+    transition: 0.5s;
+}
+
+.pricing .cards .tarif{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2c33;
+    padding: 30px 0;
+}
+
+.pricing .cards .price {
+    font-size: 45px;
+    font-weight: 600;
+    color: #1f2c33;
+    padding: 30px 0;
+    background: #ebebeb;
+    transition: 0.5s;
+}
+
+.pricing .cards .price span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pricing .cards .list{
+    margin: 55px 0 50px;
+}
+
+.pricing .cards .list-item{
+    font-size: 14px;
+    color: #4f4f4f;
+    line-height: 31px;
+}
+
+.pricing .cards .btn{
+    font-size: 14px;
+    color: #fff;
+    background: var(--orange);
+    padding: 11px 25px;
+    border-radius: 5px;
+    margin-bottom: 55px;
+}
+
+.pricing .cards:hover{
+    border-color: var(--orange);
+    box-shadow: 0 0 30px #b8b8b8
+}
+
+.pricing .cards:hover .price{
+    background: var(--orange);
+    color: #fff
+}
+
+/* PROJECTS */
+.projects .block{
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects .block::after{
+    content: 'View Project';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: #1f2c33;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 1s;
+}
+
+.projects .block:hover::after{
+    transform:translate(-50% , -50%) scale(1.3);
+}
+
+
+.projects .block-image{
+    transition: 0.5s;   
+}
+
+.projects .block:hover .block-image{
+    transform: scale(1.3);
+    filter: grayscale(100%) blur(3px)
+}
+
+/* contact */
+.contact .container .unusual{
+    width: 100%;
+    padding: 30px 0 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    outline: none;
+    resize: none;
+}
+
+.contact .container .unusual::placeholder{
+    font-size: 14px;
+    font-weight: 300;
+    color: #1f2c33;
+}
+
+.contact .send .link{
+    text-decoration: none;
+    background: #ed4f2e;
+    padding: 15px 45px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact{
+    margin-bottom: 100px;
+}
+
+/* END */
+.end{
+    background: #1f2c33;
+    padding: 40px 0 40px;
+}
+
+.end .lot{
+    font-size: 14px;
+    font-weight: 400;
+    color: #a3b1bf;
+}
+
+.end .row-title{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.end .first .logo{
+    margin: 20px 0 15px;
+}
+
+.end .second .row-title{
+    margin-bottom: 35px;
+}
+
+.end .second .lot{
+    margin-bottom: 25px;
+}
+
+.end .second i{
+    margin-right: 7px;
+}
+
+.end .third .row-title{
+    margin-bottom: 35px;
+}
+
+.end .third .block{
+    min-width: 265px;
+    height: 200px;
+}
+
+.end .third .block img{
+    margin-top: 5px;
+    overflow: hidden;
+    transition: 0.5s;   
+}
+
+.end .third .block img:hover{
+    transform: scale(1.3)
+}
+
+.end .fourth .row-title{
+    margin-bottom: 35px;
+}
+
+.end .fourth .lot{
+    margin-bottom: 20px;
+}
+
+.end .fourth .email{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.end .fourth .email input{
+    width: 175px;
+    height: 40px;
+    background: #404b51;
+    outline: none;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding-left: 15px;  
+}
+
+.end .fourth .email input::placeholder{
+    font-size: 14px;
+    font-weight: 300;
+    color: #a3b1bf;
+}
+
+.end .fourth .email .btn1{
+    width: 90px;
+    height: 40px;
+    background: var(--orange);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    padding-right: 5px;
+    outline: none;
+    border: none;
+    border-radius: 3px
+}
+
+.end .fourth .icons{
+    display: flex;
+}
+
+.end .fourth .icons a{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.end .fourth .icons a:hover{
+    background: #fff;
+    color: #404b51;
+}
+
+/* FOOTER */
+footer{
+    background: #283645;
+}
+
+footer p{
+    padding: 35px 0;
+    font-size: 14px;
+    color: #fff;
+}
